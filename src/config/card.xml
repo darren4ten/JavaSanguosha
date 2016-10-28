@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cards [
+<!ELEMENT root (card+)>
+<!ELEMENT card (name,type,targetType,needRange,img,ef_img,(att,def,eqType)?)> 
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT targetType (#PCDATA)>
+<!ELEMENT needRange (#PCDATA)>
+<!ELEMENT img (#PCDATA)>
+<!ELEMENT ef_img (#PCDATA)>
+<!ATTLIST card id CDATA #REQUIRED>
+<!ATTLIST card cardtype CDATA #REQUIRED>
+<!ATTLIST card class CDATA #REQUIRED>
+<!ENTITY AOE "0">
+<!ENTITY SELECT "1">
+<!ENTITY NONE "2">
+]>
+<cards>
+	<card id="1" cardtype="base" class="org.wangfuyuan.sgs.card.base.Card_Sha">
+		<name>杀</name>
+		<type>1</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>true</needRange>
+		<img>ksha</img>
+		<ef_img>ef_sha</ef_img>
+	</card>
+	<card id="2" cardtype="base" class="org.wangfuyuan.sgs.card.base.Card_Shan">
+		<name>闪</name>
+		<type>2</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>kshan</img>
+		<ef_img>ef_shan</ef_img>
+	</card>
+	
+	<card id="3" cardtype="base" class="org.wangfuyuan.sgs.card.base.Card_Tao">
+		<name>桃</name>
+		<type>3</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>ktao</img>
+		<ef_img>ef_tao</ef_img>
+	</card>
+	
+	<card id="91" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_BaGuaZhen">
+		<name>八卦阵</name>
+		<type>91</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_bagua</img>
+		<ef_img></ef_img>
+		<att>0</att>
+		<def>0</def>
+		<eqType>FANGJU</eqType>
+	</card>
+
+	<card id="11" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_QingGangJian">
+		<name>青钢剑</name>
+		<type>11</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_qinggang</img>
+		<ef_img></ef_img>
+		<att>2</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+
+	<card id="21" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_ZhuGeLianNu">
+		<name>诸葛连弩</name>
+		<type>21</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_zhugeliannu</img>
+		<ef_img></ef_img>
+		<att>1</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="31" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_GuanShiFu">
+		<name>贯石斧</name>
+		<type>31</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_guanshi</img>
+		<ef_img></ef_img>
+		<att>2</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="41" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_ZhangBaSheMao">
+		<name>丈八蛇矛</name>
+		<type>41</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_zhangbashemao</img>
+		<ef_img></ef_img>
+		<att>3</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="51" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_CiXiongShuangGuJian">
+		<name>雌雄双股剑</name>
+		<type>51</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_cixiong</img>
+		<ef_img></ef_img>
+		<att>2</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="61" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_QiLinGong">
+		<name>麒麟弓</name>
+		<type>61</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_qilingong</img>
+		<ef_img></ef_img>
+		<att>5</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="71" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_FangTianHuaJi">
+		<name>方天画戟</name>
+		<type>71</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_fangtianhuaji</img>
+		<ef_img></ef_img>
+		<att>4</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="81" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_QingLongYanYueDao">
+		<name>青龙偃月刀</name>
+		<type>81</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_qinglongyanyuedao</img>
+		<ef_img></ef_img>
+		<att>3</att>
+		<def>0</def>
+		<eqType>WUQI</eqType>
+	</card>
+	
+	<card id="101" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_AttHorse">
+		<name>大宛-1</name>
+		<type>101</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_dawan</img>
+		<ef_img></ef_img>
+		<att>1</att>
+		<def>0</def>
+		<eqType>_MA</eqType>
+	</card>
+	
+	<card id="131" cardtype="equipment"
+		class="org.wangfuyuan.sgs.card.equipment.Card_DefHorse">
+		<name>的卢+1</name>
+		<type>131</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>eq_dilu</img>
+		<ef_img></ef_img>
+		<att>0</att>
+		<def>1</def>
+		<eqType>MA</eqType>
+	</card>
+	
+	<card id="10" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_JueDou">
+		<name>决斗</name>
+		<type>10</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>false</needRange>
+		<img>J_juedou</img>
+		<ef_img>ef_juedou</ef_img>
+	</card>
+	
+	<card id="20" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_LeBuSiShu">
+		<name>乐不思蜀</name>
+		<type>20</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>false</needRange>
+		<img>J_lebusishu</img>
+		<ef_img>ef_lebusishu</ef_img>
+	</card>
+	
+	<card id="30" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_JieDaoShaRen">
+		<name>借刀杀人</name>
+		<type>30</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>false</needRange>
+		<img>J_jiedaosharen</img>
+		<ef_img>ef_jiedaosharen</ef_img>
+	</card>
+	
+	<card id="40" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_WuXieKeJi">
+		<name>无懈可击</name>
+		<type>40</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_wuxiekeji</img>
+		<ef_img>ef_wuxiekeji</ef_img>
+	</card>
+	
+	<card id="50" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_TaoYuanJieYi">
+		<name>桃园结义</name>
+		<type>50</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_taoyuan</img>
+		<ef_img>ef_taoyuanjieyi</ef_img>
+	</card>
+	
+	<card id="60" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_WanJianQiFa">
+		<name>万箭齐发</name>
+		<type>60</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_wanjian</img>
+		<ef_img>ef_wanjianqifa</ef_img>
+	</card>
+	
+	<card id="70" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_ShanDian">
+		<name>闪电</name>
+		<type>70</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_shandian</img>
+		<ef_img>ef_shandian</ef_img>
+	</card>
+	
+	<card id="80" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_NanManRuQin">
+		<name>南蛮入侵</name>
+		<type>80</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_nanman</img>
+		<ef_img>ef_nanmanruqin</ef_img>
+	</card>
+	
+	<card id="90" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_WuZhongShengYou">
+		<name>无中生有</name>
+		<type>90</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_wuzhong</img>
+		<ef_img>ef_wuzhongshengyou</ef_img>
+	</card>
+	
+	<card id="100" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_WuGuFengDeng">
+		<name>五谷丰登</name>
+		<type>100</type>
+		<targetType>&NONE;</targetType>
+		<needRange>false</needRange>
+		<img>J_wugu</img>
+		<ef_img>ef_wugufengdeng</ef_img>
+	</card>
+	
+	<card id="110" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_GuoHeChaiQiao">
+		<name>过河拆桥</name>
+		<type>110</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>false</needRange>
+		<img>J_guohe</img>
+		<ef_img>ef_guohechaiqiao</ef_img>
+	</card>
+	
+	<card id="120" cardtype="kit" class="org.wangfuyuan.sgs.card.kits.Card_ShunShouQianYang">
+		<name>顺手牵羊</name>
+		<type>120</type>
+		<targetType>&SELECT;</targetType>
+		<needRange>false</needRange>
+		<img>J_shunshou</img>
+		<ef_img>ef_shunshouqianyang</ef_img>
+	</card>
+</cards>

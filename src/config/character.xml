@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE root [
+<!ELEMENT root (character+)>
+<!ELEMENT character (name,sex,country,maxhp,headimg,immuneCard,skill)> 
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT maxhp (#PCDATA)>
+<!ELEMENT headimg (#PCDATA)>
+<!ELEMENT immuneCard (#PCDATA)>
+<!ELEMENT skill (action|active|function|other|process|trigger|skill)*>
+<!ATTLIST character id ID #REQUIRED>
+]>
+
+<root>
+	<character id="caocao">
+		<name>曹操 </name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>4</maxhp>
+		<headimg>P_caocao</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.CaoCao_HuJia_Boss</active>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.CaoCao_jianxiong</trigger>
+		</skill>
+	</character>
+	<character id="simayi">
+		<name>司马懿</name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>3</maxhp>
+		<headimg>P_simayi</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.Simayi_fankui</trigger>
+			<action>org.wangfuyuan.sgs.skills.action.Simayi_guicai</action>
+		</skill>
+	</character>
+	<character id="guojia">
+		<name>郭嘉</name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>3</maxhp>
+		<headimg>P_guojia</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.GuoJia_yiji_tiandu
+			</trigger>
+		</skill>
+	</character>
+	<character id="zhangliao">
+		<name>张辽</name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>4</maxhp>
+		<headimg>P_zhangliao</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<process>org.wangfuyuan.sgs.skills.process.ZhangLiao_tuxi</process>
+		</skill>
+	</character>
+	<character id="zhenji">
+		<name>甄姬 </name>
+		<sex>false</sex>
+		<country>WEI</country>
+		<maxhp>3</maxhp>
+		<headimg>P_zhenji</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.Zhenji_qingguo</active>
+			<process>org.wangfuyuan.sgs.skills.process.ZhenJi_luoshen</process>
+		</skill>
+	</character>
+	<character id="xuchu">
+		<name>许褚</name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>4</maxhp>
+		<headimg>P_xuchu</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+		<active>org.wangfuyuan.sgs.skills.active.HuaTuo_jijiu</active>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.ZhangFei_paoxiao</trigger>
+			<process>org.wangfuyuan.sgs.skills.process.XuChu_luoyi</process>
+		</skill>
+	</character>
+	<character id="xiahoudun">
+		<name>夏侯惇</name>
+		<sex>true</sex>
+		<country>WEI</country>
+		<maxhp>4</maxhp>
+		<headimg>P_xiahoudun</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.XiaHouDun_ganglie
+			</trigger>
+		</skill>
+	</character>
+	<character id="liubei">
+		<name>刘备</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_liubei</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.LiuBei_rende</active>
+			<active>org.wangfuyuan.sgs.skills.active.LiuBei_JiJiang_Boss</active>
+		</skill>
+	</character>
+	<character id="zhaoyun">
+		<name>赵云</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_zhaoyun</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.ZhaoYun_longdan</active>
+		</skill>
+	</character>
+	<character id="machao">
+		<name>马超</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_machao</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<action>org.wangfuyuan.sgs.skills.action.MaChao_tieji</action>
+			<function>org.wangfuyuan.sgs.skills.function.MaChao_mashu</function>
+		</skill>
+	</character>
+	<character id="guanyu">
+		<name>关羽</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_guanyu</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.GuanYu_wusheng</active>
+		</skill>
+	</character>
+	<character id="zhugeliang">
+		<name>诸葛亮</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_zhugeliang</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.ZhuGe_kongcheng</trigger>
+			<process>org.wangfuyuan.sgs.skills.process.ZhuGe_GuanXing</process>
+		</skill>
+	</character>
+	<character id="zhangfei">
+		<name>张飞</name>
+		<sex>true</sex>
+		<country>SHU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_zhangfei</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.ZhangFei_paoxiao</trigger>
+		</skill>
+	</character>
+	<character id="huangyueying">
+		<name>黄月英</name>
+		<sex>false</sex>
+		<country>SHU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_huangyueying</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.HuangYueYing_jizhi
+			</trigger>
+			<function>org.wangfuyuan.sgs.skills.function.HuangYueYing_QiCai
+			</function>
+		</skill>
+	</character>
+	<character id="sunquan">
+		<name>孙权</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_sunquan</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.SunQuan_zhiheng</active>
+		</skill>
+	</character>
+	<character id="huanggai">
+		<name>黄盖</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_huanggai</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.HuangGai_kurou</active>
+		</skill>
+	</character>
+	<character id="zhouyu">
+		<name>周瑜</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_zhouyu</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<process>org.wangfuyuan.sgs.skills.process.ZhouYu_yingzi</process>
+			<active>org.wangfuyuan.sgs.skills.active.ZhouYu_fanjian</active>
+		</skill>
+	</character>
+	<character id="luxun">
+		<name>陆逊</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_luxun</headimg>
+		<immuneCard>20,120</immuneCard>
+		<skill>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.LuXun_lianying</trigger>
+			<other>org.wangfuyuan.sgs.skills.other.LuXun_qianxun</other>
+		</skill>
+	</character>
+	<character id="ganning">
+		<name>甘宁</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_ganning</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.GanNing_qixi</active>
+		</skill>
+	</character>
+	<character id="lvmeng">
+		<name>吕蒙</name>
+		<sex>true</sex>
+		<country>WU</country>
+		<maxhp>4</maxhp>
+		<headimg>P_lvmeng</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<process>org.wangfuyuan.sgs.skills.process.LvMeng_keji</process>
+		</skill>
+	</character>
+	<character id="sunshangxiang">
+		<name>孙尚香</name>
+		<sex>false</sex>
+		<country>WU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_sunshangxiang</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<active>org.wangfuyuan.sgs.skills.active.SunShangXiang_jieyin</active>
+			<trigger>org.wangfuyuan.sgs.skills.trigger.SunShangXiang_xiaoji
+			</trigger>
+		</skill>
+	</character>
+	<character id="daqiao">
+		<name>大乔</name>
+		<sex>false</sex>
+		<country>WU</country>
+		<maxhp>3</maxhp>
+		<headimg>P_daqiao</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<action>org.wangfuyuan.sgs.skills.action.DaQiao_liuli</action>
+			<active>org.wangfuyuan.sgs.skills.active.DaQiao_GuoSe</active>
+		</skill>
+	</character>
+	<character id="huatuo">
+		<name>华佗</name>
+		<sex>true</sex>
+		<country>QUN</country>
+		<maxhp>3</maxhp>
+		<headimg>P_huatuo</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+		<active>org.wangfuyuan.sgs.skills.active.HuaTuo_qingnang</active>
+		<active>org.wangfuyuan.sgs.skills.active.HuaTuo_jijiu</active>
+		</skill>
+	</character>
+	<character id="lvbu">
+		<name>吕布</name>
+		<sex>true</sex>
+		<country>QUN</country>
+		<maxhp>4</maxhp>
+		<headimg>P_lvbu</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<action>org.wangfuyuan.sgs.skills.action.Lvbu_wushuang</action>
+		</skill>
+	</character>
+	<character id="diaochan">
+		<name>貂蝉</name>
+		<sex>false</sex>
+		<country>QUN</country>
+		<maxhp>3</maxhp>
+		<headimg>P_diaochan</headimg>
+		<immuneCard></immuneCard>
+		<skill>
+			<process>org.wangfuyuan.sgs.skills.process.DiaoChan_biyue</process>
+			<active>org.wangfuyuan.sgs.skills.active.DiaoChan_lijian</active>
+		</skill>
+	</character>
+</root>
