@@ -1,0 +1,6 @@
+
+function Tet(){
+alert(99)
+}
+
+Tet();
